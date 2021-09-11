@@ -78,14 +78,14 @@ WHERE brand_name = 'samsung'
 		AND ram = 8
 ORDER BY memory
 
-/*SELECT *
+SELECT *
 FROM m_phones
 WHERE (brand_name = 'Nokia' 
 		OR memory > 256)
 		AND memory IS NOT NULL
-ORDER BY memory*/
+ORDER BY memory
 
-SELECT /*TOP 10 PERCENT*/ brand_name, 
+SELECT TOP 10 PERCENT brand_name, 
 			phone_name, 
 			price
 FROM m_phones
