@@ -17,13 +17,12 @@ ORDER BY
 	p.ram
 
 
-
-
 SELECT
 	client_id,
 	client_name
 FROM clients
 ORDER BY client_name
+
 
 SELECT 
 	phone_id,

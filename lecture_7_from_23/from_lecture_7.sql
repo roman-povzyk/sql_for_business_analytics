@@ -2,12 +2,8 @@ SELECT COUNT(*)
 FROM phones
 
 
-
-
 SELECT COUNT(*)
 FROM brands
-
-
 
 
 SELECT phones.phone_id,
@@ -18,8 +14,6 @@ SELECT phones.phone_id,
 FROM phones
 JOIN brands
 	ON phones.brand_id = brands.brand_id
-
-
 
 
 SELECT phones.phone_id,
@@ -33,8 +27,6 @@ LEFT JOIN brands
 WHERE brands.brand_id IS NULL
 
 
-
-
 SELECT phones.phone_id,
 	phones.phone_name,
 	phones.brand_id,
@@ -44,8 +36,6 @@ FROM phones
 RIGHT JOIN brands
 	ON phones.brand_id = brands.brand_id
 WHERE phones.phone_id IS NULL
-
-
 
 
 SELECT phones.phone_id,
@@ -60,15 +50,11 @@ WHERE phones.phone_id IS NULL
 		OR brands.brand_id IS NULL
 
 
-
-
 SELECT brand_name, 
 	(SELECT COUNT(*)
 	FROM phones b
 	WHERE b.brand_id = a.brand_id) AS gu_t
 FROM brands a
-
-
 
 
 SELECT a.Brand_name,
@@ -84,8 +70,6 @@ SELECT brand_name,
 	FROM phones) AS qu_total
 FROM brands a) a
 ORDER BY per DESC
-
-
 
 
 SELECT m.merchant_name,
@@ -107,8 +91,6 @@ AND p.price <= (SELECT AVG(price)
 					FROM phone_price) + 100
 
 
-
-
 SELECT m.merchant_name,
 		f.phone_name,
 		c.color_name,
@@ -127,8 +109,6 @@ WHERE f.memory > ALL(SELECT DISTINCT memory
 						FROM phones
 						WHERE brand_id = 5
 							AND memory IS NOT NULL)
-
-
 
 
 SELECT m.merchant_name,

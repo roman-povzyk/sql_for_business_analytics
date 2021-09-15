@@ -7,9 +7,11 @@
 
 --select count(*) from m_phones
 
+
 SELECT COUNT(brand_name),
 		COUNT(DISTINCT body_type) 
 FROM m_phones
+
 
 SELECT MIN(price),
 		MAX(price),

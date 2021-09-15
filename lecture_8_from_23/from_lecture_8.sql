@@ -18,8 +18,6 @@ WHERE p.phone_id IN (SELECT phone_id
 					HAVING SUM(amount) <= 10)
 
 
-
-
 SELECT m.merchant_name,
 	b.Brand_name,
 	f.phone_name,
@@ -42,31 +40,21 @@ WHERE EXISTS(SELECT *
 			AND s.amount <= 5)
 
 
-
-
 SELECT COUNT(*)
 FROM phones
-
-
 
 
 SELECT COUNT(*)
 FROM brands
 
 
-
-
 SELECT 1581 * 92
-
-
 
 
 SELECT *
 FROM phones p, 
 		brands b
 WHERE p.brand_id = b.brand_id
-
-
 
 
 SELECT b.brand_id,
@@ -82,8 +70,6 @@ FROM phones p
 LEFT JOIN brands b
 	ON p.brand_id = b.brand_id
 WHERE p.ram = 8
-
-
 
 
 SELECT merchant_name, 
@@ -122,8 +108,6 @@ WHERE s.phone_id = 1059800
 	AND s.merchant_id = 83
 	AND s.amount <> 0
 ORDER BY 1 DESC
-
-
 
 
 SELECT merchant_name, 

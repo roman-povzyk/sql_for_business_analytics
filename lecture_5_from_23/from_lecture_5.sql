@@ -2,12 +2,8 @@ SELECT COUNT(phone_name)
 FROM m_phones
 
 
-
-
 SELECT DISTINCT brand_name
 FROM m_phones
-
-
 
 
 SELECT brand_name,
@@ -23,8 +19,6 @@ ORDER BY brand_name,
 		memory
 
 
-
-
 SELECT brand_name,
 		memory,
 		COUNT(phone_name)
@@ -38,8 +32,6 @@ ORDER BY brand_name,
 		memory
 
 
-
-
 SELECT brand_name,
 		memory,
 		COUNT(phone_name) AS q_t
@@ -51,8 +43,6 @@ GROUP BY grouping sets (brand_name,
 HAVING COUNT(phone_name) > 10
 ORDER BY brand_name,
 		memory
-
-
 
 
 SELECT brand_name,

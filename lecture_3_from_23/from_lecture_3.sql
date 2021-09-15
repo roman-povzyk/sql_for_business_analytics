@@ -6,8 +6,6 @@ SELECT MIN(price),
 FROM m_phones
 
 
-
-
 SELECT COUNT(phone_name) AS Кількість_товарів,
 		SUM(price) AS Сума_цін,
 		AVG(price) AS Середня_ціна,
@@ -17,22 +15,16 @@ SELECT COUNT(phone_name) AS Кількість_товарів,
 FROM m_phones
 
 
-
-
 SELECT brand_name,
 		phone_name,
 		heigh * width * thickness AS volume
 FROM m_phones
 
 
-
-
 SELECT *
 FROM m_phones
 ORDER BY brand_name DESC,
 		memory DESC
-
-
 
 
 SELECT brand_name,

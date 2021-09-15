@@ -2,8 +2,6 @@ SELECT *
 FROM purchases
 
 
-
-
 SELECT
 		cl.client_name AS Customer,
 		p.date_purch AS Date,
