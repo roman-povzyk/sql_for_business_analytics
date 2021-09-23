@@ -20,28 +20,28 @@ FULL JOIN phone_price
 WHERE phone_price.phone_id IS NULL
 	AND brand_id = 6*/
 
-/*SELECT
+SELECT
 	*
 FROM new_phone_price
 WHERE phone_id = 1*/
 
 -- task 16.3
-/*UPDATE new_phone_price
+UPDATE new_phone_price
 SET price = price - 100
-WHERE phone_id = 1*/
+WHERE phone_id = 1
 
 
 -- task 16.4
-/*UPDATE new_phone_price
+UPDATE new_phone_price
 SET price = price - 10
 SELECT
 	*
 FROM new_phone_price
 JOIN stock
 	ON new_phone_price.phone_id = stock.phone_id
-WHERE stock.amount = 1*/
+WHERE stock.amount = 1
 
-/*SELECT
+SELECT
 	*
 FROM new_phone_price
 JOIN stock
