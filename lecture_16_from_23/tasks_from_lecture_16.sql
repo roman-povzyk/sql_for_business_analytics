@@ -1,5 +1,5 @@
 -- task 16.1
-/*SELECT
+SELECT
 	*
 FROM new_phone_price
 WHERE price = 2222
@@ -49,9 +49,6 @@ JOIN stock
 WHERE stock.amount = 1
 
 
--- task 16.5
-
-
 -- task 16.6
 DELETE FROM new_phone_price
 WHERE merchant_id = 2
@@ -61,4 +58,4 @@ SELECT
 	*
 FROM new_phone_price
 WHERE merchant_id = 2
-	AND color_id = 20*/
+	AND color_id = 20
